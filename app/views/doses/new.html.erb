@@ -1,5 +1,7 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
+<div class="container">
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
   <%= f.association :ingredient, selected: :first %>
-  <%= f.button :submit %>
-<% end %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
